@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="ARKFORM — Award-winning interior fit-out and commercial design firm. Transforming offices, retail, and hospitality spaces into business advantages."/>
+<title>Home | ARKFORM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23cfae7d'%3E%3Cpath d='M12 2L1 22h22L12 2zm0 5l6.5 12h-13L12 7z'/%3E%3C/svg%3E" />
+</head>
+<body>
+<header id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap" aria-label="ARKFORM — Home">
+      <svg class="logo-svg" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0.8" y="0.8" width="42.4" height="34.4" rx="2" stroke="currentColor" stroke-width="1.4"/>
+  <rect x="10.5" y="8.5" width="23" height="19" rx="1" stroke="currentColor" stroke-width="1.1"/>
+  <line x1="0.8" y1="0.8" x2="10.5" y2="8.5" stroke="currentColor" stroke-width="0.9"/>
+  <line x1="43.2" y1="0.8" x2="33.5" y2="8.5" stroke="currentColor" stroke-width="0.9"/>
+  <line x1="0.8" y1="35.2" x2="10.5" y2="27.5" stroke="currentColor" stroke-width="0.9"/>
+  <line x1="43.2" y1="35.2" x2="33.5" y2="27.5" stroke="currentColor" stroke-width="0.9"/>
+</svg>
+      <div class="logo-text">
+        <span class="logo-name">ARK<b>FORM</b></span>
+        
+      </div>
+    </a>
+    <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">Home <span class="nav-chev"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a>
+        <div class="dropdown">
+          <a href="index.html"  class="dropdown-link"><span class="dd-dot"></span>Home One</a>
+          <a href="home2.html" class="dropdown-link"><span class="dd-dot"></span>Home Two</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="about.html"     class="nav-link">About</a></div>
+      <div class="nav-item"><a href="services.html"  class="nav-link">Services</a></div>
+      <div class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></div>
+      <div class="nav-item"><a href="process.html"   class="nav-link">Process</a></div>
+      <div class="nav-item"><a href="contact.html"   class="nav-link">Contact</a></div>
+    </nav>
+    <div class="hd-right">
+      <button class="dir-toggle" id="dirToggle" aria-label="Toggle direction">LTR</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span><span class="icon-sun"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+      </button>
+      <div class="hd-divider"></div>
+      <a href="contact.html" class="btn-nav-cta">Request Consultation</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobile-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html" class="mobile-nav-link">Home
+    <div class="m-sub">
+      <a href="index.html"  class="m-sub-link">Home One</a>
+      <a href="home2.html"  class="m-sub-link">Home Two</a>
+    </div>
+  </a>
+  <a href="about.html"     class="mobile-nav-link">About</a>
+  <a href="services.html"  class="mobile-nav-link">Services</a>
+  <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+  <a href="process.html"   class="mobile-nav-link">Process</a>
+  <a href="contact.html"   class="mobile-nav-link">Contact</a>
+  <div style="margin-top:32px;display:flex;gap:10px;flex-wrap:wrap;">
+    <button class="dir-toggle" aria-label="Toggle direction">LTR</button>
+    <button class="theme-toggle" aria-label="Toggle theme"><span class="icon-moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span><span class="icon-sun"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span></button>
+    <a href="contact.html" class="btn-nav-cta">Request Consultation</a>
+  </div>
+</nav>
+
+<main>
+
+<!--  HERO — Full-bleed editorial -->
+<section class="hero-editorial" id="hero">
+  <div class="hero-bg-img">
+    <img src="index_hero.png" alt="Luxury Corporate Office Interior — Dubai HQ" style="width:100%;height:100%;min-height:100svh;object-fit:cover;">
+  </div>
+  <div class="hero-editorial-overlay"></div>
+  <div class="hero-editorial-content">
+    <div class="container">
+      <div class="hero-kicker">Est. 2008 · Dubai, UAE · 340+ Projects</div>
+      <h1 class="hero-h1">We Transform<br>Commercial Space<br>into <em>Business</em><br><em>Advantage</em></h1>
+      <p class="hero-sub">From bare shell to landmark headquarters — ARKFORM designs and builds commercial environments that attract talent, impress clients, and define your brand for decades.</p>
+      <div class="hero-actions">
+        <a href="contact.html"   class="btn btn-gold">Request a Consultation</a>
+        <a href="portfolio.html" class="btn btn-border">See Our Portfolio</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!--  CORE EXPERTISE — Horizontal cells, purposeful not decorative -->
+<section id="expertise" style="background:var(--bg-1);">
+  <div class="expertise-row reveal">
+    <div class="expertise-cell">
+      <div class="expertise-num">01</div>
+      <div class="expertise-title">Office Fit-Outs</div>
+      <p class="expertise-body">From Category A shell to a fully fitted, furnished, and future-ready workplace. Every trade, every detail — single-point accountability from brief to handover.</p>
+      <a href="services.html" class="btn-ghost-gold">Explore <span class="arr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+    </div>
+    <div class="expertise-cell">
+      <div class="expertise-num">02</div>
+      <div class="expertise-title">Retail Design</div>
+      <p class="expertise-body">Experiential environments engineered for footfall, dwell time, and brand loyalty. We design retail spaces that customers return to — and competitors envy.</p>
+      <a href="services.html" class="btn-ghost-gold">Explore <span class="arr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+    </div>
+    <div class="expertise-cell">
+      <div class="expertise-num">03</div>
+      <div class="expertise-title">Space Planning</div>
+      <p class="expertise-body">Strategic spatial analysis that unlocks the full potential of your square footage. Better flow, better collaboration, measurably better performance.</p>
+      <a href="services.html" class="btn-ghost-gold">Explore <span class="arr"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!--  SIGNATURE PROJECTS — 2 large alternating showcases -->
+<section id="projects" class="project-showcase">
+  <div class="project-row reveal-left">
+    <div class="project-visual">
+      <img src="index_project1.png" alt="Meridian Financial HQ" style="width:100%;height:100%;position:absolute;inset:0;border-radius:0;object-fit:cover;">
+    </div>
+    <div class="project-body">
+      <div class="project-cat">Office Fit-Out · Dubai</div>
+      <h2 class="project-name">Meridian<br><em>Financial HQ</em></h2>
+      <p class="project-desc">A 4,200 sqm headquarters transformation for one of the region's leading financial institutions. Biophilic zones, collaborative floors, and an executive suite that signals authority from the moment clients enter.</p>
+      <div class="project-specs">
+        <div class="project-spec">
+          <div class="project-spec-val">4,200</div>
+          <div class="project-spec-key">sqm</div>
+        </div>
+        <div class="project-spec">
+          <div class="project-spec-val">14</div>
+          <div class="project-spec-key">Weeks</div>
+        </div>
+        <div class="project-spec">
+          <div class="project-spec-val">LEED</div>
+          <div class="project-spec-key">Gold Certified</div>
+        </div>
+      </div>
+      <a href="portfolio.html" class="btn btn-gold btn-sm">View Case Study</a>
+    </div>
+  </div>
+  <div class="project-row rev reveal-right">
+    <div class="project-visual">
+      <img src="index_project2.png" alt="Lumière Flagship Store" style="width:100%;height:100%;position:absolute;inset:0;border-radius:0;object-fit:cover;">
+    </div>
+    <div class="project-body" style="background:var(--bg-3);">
+      <div class="project-cat">Retail Design · Abu Dhabi</div>
+      <h2 class="project-name">Lumière<br><em>Flagship Store</em></h2>
+      <p class="project-desc">A 1,800 sqm luxury retail experience crafted with custom Carrara marble fixtures, bespoke brass lighting, and a spatial narrative that elevates every product in the collection.</p>
+      <div class="project-specs">
+        <div class="project-spec">
+          <div class="project-spec-val">1,800</div>
+          <div class="project-spec-key">sqm</div>
+        </div>
+        <div class="project-spec">
+          <div class="project-spec-val">+40%</div>
+          <div class="project-spec-key">Dwell Time</div>
+        </div>
+        <div class="project-spec">
+          <div class="project-spec-val">2024</div>
+          <div class="project-spec-key">CIDA Award</div>
+        </div>
+      </div>
+      <a href="portfolio.html" class="btn btn-gold btn-sm">View Case Study</a>
+    </div>
+  </div>
+</section>
+
+<!--  WHY ARKFORM — Stat-anchored differentiators -->
+<section id="why-arkform" style="background:var(--bg-0);">
+  <div class="container">
+    <div class="sh reveal" style="max-width:600px;margin-bottom:60px;">
+      <div class="section-eyebrow">Why Choose Us</div>
+      <h2 class="sh-title">Standards That<br>Never <em>Compromise</em></h2>
+    </div>
+  </div>
+  <div class="stat-anchors reveal">
+    <div class="sa-cell">
+      <div class="sa-big"><span class="counter" data-target="340" data-suffix="+">340+</span></div>
+      <div class="sa-title">Projects, Zero Compromises</div>
+      <p class="sa-body">17 years and 340+ completed commercial projects across the UAE and GCC. Every one delivered on time, on budget, and built to outlast the competition.</p>
+    </div>
+    <div class="sa-cell">
+      <div class="sa-big"><span class="counter" data-target="96" data-suffix="%">96%</span></div>
+      <div class="sa-title">Client Retention Rate</div>
+      <p class="sa-body">Our clients keep coming back — and they bring their network. 96% of our work comes from repeat business and referrals. That's the standard we hold ourselves to.</p>
+    </div>
+    <div class="sa-cell">
+      <div class="sa-big">1<span style="font-size:0.45em;color:var(--gold);">team</span></div>
+      <div class="sa-title">Design &amp; Build Under One Roof</div>
+      <p class="sa-body">No subcontracting, no handoff risk. Our in-house architects, designers, and build team collaborate from day one — giving you a single point of accountability.</p>
+    </div>
+    <div class="sa-cell">
+      <div class="sa-big">28</div>
+      <div class="sa-title">Industry Awards Won</div>
+      <p class="sa-body">Recognised by CIDA, MENA Design Awards, and LEED certification bodies. Excellence isn't a promise — it's a documented track record.</p>
+    </div>
+  </div>
+</section>
+
+<!--  CLIENT TESTIMONIALS — Featured + 2 supporting -->
+<section id="testimonials" class="section" style="background:var(--bg-1);">
+  <div class="container">
+    <div class="sh center reveal" style="margin-bottom:52px;">
+      <div class="section-eyebrow center">Client Voice</div>
+      <h2 class="sh-title">What Our <em>Clients</em> Say</h2>
+    </div>
+    <div class="testimonial-featured reveal" style="background:var(--bg-card);border:1px solid var(--bd-g);border-radius:var(--r-lg);overflow:hidden;">
+      <div class="tf-main">
+        <div class="tf-mark">"</div>
+        <p class="tf-quote">ARKFORM didn't just fit out our office — they reimagined what our company culture could feel like in physical form. The project was delivered two weeks ahead of schedule, and staff productivity surveys showed a 28% improvement in the first quarter after move-in. That's not a coincidence — that's great design.</p>
+        <div class="tf-author">
+          <div class="tf-avatar"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+          <div>
+            <div class="tf-name">Sarah Al-Mansoori</div>
+            <div class="tf-role">CEO, Meridian Capital Group — Dubai</div>
+          </div>
+        </div>
+      </div>
+      <div class="tf-side">
+        <div class="tf-minor">
+          <p class="tf-minor-quote">"Our retail foot traffic increased by 40% within three months. ARKFORM understood our brand identity better than any agency we had briefed."</p>
+          <div class="tf-minor-author">James Thornton — Director, Lumière Retail Group</div>
+        </div>
+        <div class="tf-minor">
+          <p class="tf-minor-quote">"The process was entirely seamless. What impressed us most was how ARKFORM balanced aesthetic ambition with absolute practical discipline."</p>
+          <div class="tf-minor-author">Rania Khalid — Operations Director, Atrium Hotels</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  RECOGNITION — Awards + press logos -->
+<section id="recognition" style="background:var(--bg-0);">
+  <div class="container">
+    <div class="sh reveal" style="margin-bottom:44px;">
+      <div class="section-eyebrow">Industry Recognition</div>
+      <h2 class="sh-title">Validated by the<br><em>Industry's Best</em></h2>
+    </div>
+  </div>
+  <div class="recognition-strip reveal">
+    <div class="recognition-inner">
+      <div class="rec-award"><div class="rec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path></svg></div><div class="rec-award-name">CIDA Best Commercial</div><div class="rec-year">2024</div></div>
+      <div class="rec-award"><div class="rec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><div class="rec-award-name">MENA Design Award</div><div class="rec-year">2023 &amp; 2024</div></div>
+      <div class="rec-award"><div class="rec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div><div class="rec-award-name">LEED Gold Certified</div><div class="rec-year">Since 2020</div></div>
+      <div class="rec-award"><div class="rec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div><div class="rec-award-name">Interior Design Excellence</div><div class="rec-year">2022 &amp; 2023</div></div>
+      <div class="rec-award"><div class="rec-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg></div><div class="rec-award-name">GCC Build Quality Award</div><div class="rec-year">2021</div></div>
+    </div>
+  </div>
+</section>
+
+<!--  FINAL CTA — Split: Stat visual + direct action -->
+<section id="cta" class="cta-split">
+  <div class="cta-split-visual reveal-left">
+    <img src="index_cta.png" alt="Award-winning office transformation" style="width:100%;height:100%;position:absolute;inset:0;border-radius:0;object-fit:cover;">
+    <div class="cta-split-visual-overlay">
+      <div class="cta-stat-big">25%</div>
+      <p class="cta-stat-caption">Average increase in employee productivity reported by clients one quarter after ARKFORM project handover</p>
+    </div>
+  </div>
+  <div class="cta-split-body reveal-right">
+    <div class="section-eyebrow">Your Workspace Is Sending a Message</div>
+    <h2 class="cta-split-title">Is It the<br>Right <em>One</em>?</h2>
+    <p class="cta-split-sub">Your office, store, or commercial space tells clients and talent who you are before you say a word. Let ARKFORM make sure it says exactly what you intend.</p>
+    <p style="font-size:0.84rem;color:var(--txt-3);margin-bottom:20px;">Enter your email and we'll be in touch within one business day.</p>
+    <div class="mini-form">
+      <input class="mini-input" type="email" placeholder="Your work email address" aria-label="Email address"/>
+      <a href="contact.html" class="btn btn-gold">Get in Touch</a>
+    </div>
+    <p style="font-size:0.76rem;color:var(--txt-3);margin-top:14px;">No obligation. Complimentary 30-minute discovery call included.</p>
+  </div>
+</section>
+
+</main>
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-row">
+          <svg class="logo-svg" viewBox="0 0 44 36" fill="none">
+            <rect x="0.8" y="0.8" width="42.4" height="34.4" rx="2" stroke="currentColor" stroke-width="1.4"/>
+            <rect x="10.5" y="8.5" width="23" height="19" rx="1" stroke="currentColor" stroke-width="1.1"/>
+            <line x1="0.8" y1="0.8" x2="10.5" y2="8.5" stroke="currentColor" stroke-width="0.9"/>
+            <line x1="43.2" y1="0.8" x2="33.5" y2="8.5" stroke="currentColor" stroke-width="0.9"/>
+            <line x1="0.8" y1="35.2" x2="10.5" y2="27.5" stroke="currentColor" stroke-width="0.9"/>
+            <line x1="43.2" y1="35.2" x2="33.5" y2="27.5" stroke="currentColor" stroke-width="0.9"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-name">ARK<b>FORM</b></span>
+          </div>
+        </div>
+        <p class="footer-desc">Crafting extraordinary commercial environments that define brands, inspire people, and endure for decades.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Office Fit-Outs</a></li>
+          <li><a href="services.html">Retail Design</a></li>
+          <li><a href="services.html">Space Planning</a></li>
+          <li><a href="services.html">Hospitality</a></li>
+          <li><a href="services.html">Renovation</a></li>
+          <li><a href="services.html">Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Studio</div>
+        <div class="footer-contact-row">
+          <span class="fc-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </span>
+          <span>42 Commerce Boulevard, Business District, Dubai, UAE</span>
+        </div>
+        <div class="footer-contact-row">
+          <span class="fc-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </span>
+          <span>+971 4 888 0000</span>
+        </div>
+        <div class="footer-contact-row">
+          <span class="fc-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </span>
+          <span>hello@arkform.ae</span>
+        </div>
+        <div class="footer-contact-row">
+          <span class="fc-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </span>
+          <span>Sun – Thu, 9am – 6pm GST</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 ARKFORM. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" class="soc-btn" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="#" class="soc-btn" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" class="soc-btn" aria-label="Pinterest">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.07-.63-.13-1.6.03-2.29l1.4-5.92s-.36-.71-.36-1.78c0-1.66.97-2.9 2.17-2.9 1.01 0 1.51.76 1.51 1.68 0 1.02-.65 2.56-.99 3.98-.28 1.19.6 2.16 1.77 2.16 2.13 0 3.77-2.24 3.77-5.47 0-2.86-2.06-4.86-5.01-4.86-3.41 0-5.41 2.56-5.41 5.19 0 1.03.4 2.14.89 2.74.08.1.09.23.07.35l-.33 1.36c-.05.23-.17.27-.4.17-1.5-.7-2.43-2.88-2.43-4.65 0-3.78 2.75-7.25 7.95-7.25 4.17 0 7.39 2.96 7.39 6.92 0 4.13-2.61 7.46-6.23 7.46-1.21 0-2.35-.63-2.76-1.38l-.75 2.85c-.27 1.04-1 2.35-1.5 3.15A12 12 0 1 0 12 0z"/></svg>
+        </a>
+        <a href="#" class="soc-btn" aria-label="Behance">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.827 5.372 4.577h-6.711c.092 1.466 1.488 2.846 3.123 2.846 1.215 0 2.215-.534 2.64-1.428h2.775zm-3.15-4.144c-.169-1.2-1.026-2.025-2.091-2.025-1.12 0-2.037.916-2.19 2.025h4.281zM11 12v-6.903h-4.364c-2.428 0-4.636.853-4.636 3.328 0 1.543.832 2.38 2.026 2.812-1.391.439-2.316 1.636-2.316 3.121 0 2.671 2.35 3.642 5.093 3.642h4.2v-6zm-4.996-1.579h-1.528v-2.345h1.53c1.554 0 1.966.697 1.966 1.258 0 .61-.39 1.087-1.968 1.087zm1.144 4.579h-2.673v-2.678h2.673c1.611 0 2.21.673 2.21 1.346 0 .662-.511 1.332-2.21 1.332z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body></html>
