@@ -558,6 +558,125 @@ html[dir="rtl"] .rec-award:last-child { border-left: none; }
 .port-cat { font-family: var(--ff-m); font-size: 0.63rem; letter-spacing: 0.20em; color: var(--gold); margin-bottom: 5px; }
 .port-name { font-family: var(--ff-d); font-size: 1.4rem; font-weight: 500; color: #F4EFE6; }
 
+/* ── 25b. BEFORE & AFTER TRANSFORMATIONS ───────── */
+.ba-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+.ba-card {
+  background: var(--bg-card);
+  border: 1px solid var(--bd-g);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  box-shadow: var(--sh-sm);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s;
+}
+.ba-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sh-md);
+  border-color: var(--gold);
+}
+.ba-split {
+  display: flex;
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  background: var(--bg-0);
+}
+.ba-pane {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  transition: flex 0.45s var(--ease);
+}
+.ba-pane img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s var(--ease);
+}
+.ba-pane:hover img {
+  transform: scale(1.05);
+}
+.ba-split:hover .ba-pane:hover {
+  flex: 1.35;
+}
+.ba-split:hover .ba-pane:not(:hover) {
+  flex: 0.85;
+}
+.ba-divider {
+  width: 2px;
+  background: linear-gradient(180deg, transparent 0%, var(--gold) 30%, var(--gold) 70%, transparent 100%);
+  position: relative;
+  z-index: 3;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(201, 162, 82, 0.4);
+}
+.ba-badge {
+  position: absolute;
+  top: 14px;
+  font-family: var(--ff-m);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 2;
+  pointer-events: none;
+  font-weight: 500;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.ba-badge-before {
+  inset-inline-start: 14px;
+  background: rgba(12, 10, 8, 0.84);
+  color: #FFFFFF !important;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+.ba-badge-after {
+  inset-inline-end: 14px;
+  background: #D4A843;
+  color: #080706 !important;
+  font-weight: 700;
+  border: 1px solid #F3DA90;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+[data-theme="light"] .ba-cat {
+  color: #8A5A0E;
+}
+.ba-info {
+  padding: 26px 28px;
+  background: var(--bg-card);
+}
+.ba-cat {
+  font-family: var(--ff-m);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.ba-title {
+  font-family: var(--ff-d);
+  font-size: 1.45rem;
+  color: var(--txt-1);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.ba-desc {
+  font-size: 0.875rem;
+  color: var(--txt-2);
+  line-height: 1.68;
+  margin-bottom: 0;
+}
+
 /* ── 26. PROCESS TIMELINE ─────────────────────────── */
 .process-timeline { display: grid; grid-template-columns: repeat(3,1fr); gap: 0; border: 1px solid var(--bd-g); border-radius: var(--r-lg); overflow: hidden; }
 .pt-step { padding: 44px 36px; border-right: 1px solid var(--bd-g); background: var(--bg-card); transition: background 0.3s; }
@@ -846,6 +965,7 @@ html[dir="rtl"] .pss-step::after { right: auto; left: -8px; transform: translate
   .value-cell:nth-child(2n) { border-right: none; }
   .tab-panel.active { grid-template-columns: 1fr; }
   .tab-panel-visual { min-height: 280px; }
+  .ba-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
   .header-inner {
@@ -893,6 +1013,8 @@ html[dir="rtl"] .pss-step::after { right: auto; left: -8px; transform: translate
   .recognition-inner { flex-direction: column; }
   .rec-award { border-right: none; border-bottom: 1px solid var(--bd-g); }
   .mini-form { flex-direction: column; }
+  .ba-split { height: 240px; }
+  .ba-info { padding: 20px; }
 }
 @media (max-width: 360px) {
   .header-inner { padding-inline: 10px; gap: 6px; }
